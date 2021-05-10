@@ -9,20 +9,63 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 15px;
+  background-color: var(--very-dark-blue);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--main-white);
+  position: relative;
+}
+
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark-blue);
+  min-height: 300px;
+  max-width: 800px;
+  font-family: "Inter", sans-serif;
+}
+
+.column-left {
+  /* padding: 50px; */
+  flex: 1;
+}
+
+.column-left .row h2 span {
+  color: var(--soft-violet);
+}
+
+.column-right {
+  flex: 1;
+  background: url("images//image-header-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--stat-white);
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-.card {
-  border-radius: 50%;
 }
