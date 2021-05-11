@@ -41,8 +41,9 @@ body {
 }
 
 .column-left {
-  /* padding: 50px; */
-  flex: 1;
+  padding: 50px;
+  /* flex: 1; */
+  width: calc(100% - 100px);
 }
 
 .column-left .row h2 span {
@@ -50,12 +51,14 @@ body {
 }
 
 .column-right {
-  flex: 1;
-  background: url("images//image-header-desktop.jpg") no-repeat center center;
+  /* flex: 1; */
+  background: url("images//image-header-desktop.jpg") center center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .attribution {
